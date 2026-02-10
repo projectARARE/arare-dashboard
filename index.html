@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetable Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3>Select Class</h3>
+        <select></select>
+
+        <h3>Select Teachers</h3>
+        <select></select>
+
+        <h3>Select Infrastructure</h3>
+        <select></select>
+
+        <button class="btn">Show Timetable</button>
+        <button class="btn outline">Add Timetable</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="timetable-container">
+
+        <!-- Header -->
+        <div class="timetable-header">
+            <button>&lt;</button>
+            <span class="date-range">Oct 18 – 24, 2021</span>
+            <button>&gt;</button>
+
+            <div class="view-options">
+                <button>month</button>
+                <button class="active">week</button>
+                <button>3 days</button>
+                <button>day</button>
+            </div>
+        </div>
+
+        <!-- Timetable Grid -->
+        <div class="timetable-grid">
+
+            <!-- Time Column -->
+            <div class="time-column">
+                <div class="time-slot"></div>
+                <div class="time-slot">8:00</div>
+                <div class="time-slot">8:30</div>
+                <div class="time-slot">9:00</div>
+                <div class="time-slot">9:30</div>
+                <div class="time-slot">10:00</div>
+                <div class="time-slot">10:30</div>
+                <div class="time-slot">11:00</div>
+                <div class="time-slot">11:30</div>
+                <div class="time-slot">12:00</div>
+                <div class="time-slot">12:30</div>
+                <div class="time-slot">1:00</div>
+                <div class="time-slot">1:30</div>
+                <div class="time-slot">2:00</div>
+                <div class="time-slot">2:30</div>
+                <div class="time-slot">3:00</div>
+            </div>
+
+            <!-- Days -->
+            <div class="day-column">
+                <div class="day-header">Mon 10/18</div>
+                <div class="cell"></div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Tue 10/19</div>
+                <div class="cell"></div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Wed 10/20</div>
+                <div class="cell"></div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Thu 10/21</div>
+                <div class="cell"></div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Fri 10/22</div>
+                <div class="cell"></div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Sat 10/23</div>
+                <div class="cell"></div>
+            </div>
+
+            <div class="day-column">
+                <div class="day-header">Sun 10/24</div>
+                <div class="cell"></div>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f5f6f8;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.sidebar select {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1px solid #4caf50;
+    color: #4caf50;
+}
+
+/* Main Content */
+.timetable-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+/* Header */
+.timetable-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.date-range {
+    font-weight: bold;
+}
+
+.view-options button {
+    margin-left: 6px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+.view-options .active {
+    background: #ddd;
+}
+
+/* Grid */
+.timetable-grid {
+    display: grid;
+    grid-template-columns: 80px repeat(7, 1fr);
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Time column */
+.time-column {
+    border-right: 1px solid #ddd;
+}
+
+.time-slot {
+    height: 40px;
+    padding: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Day columns */
+.day-column {
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.day-header {
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+    line-height: 40px;
+}
+
+.cell {
+    flex: 1;
+    background-image: linear-gradient(#eee 1px, transparent 1px);
+    background-size: 100% 40px;
+}
