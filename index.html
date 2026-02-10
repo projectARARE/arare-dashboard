@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARARE | Resource Allocation Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 style="margin:0; color: var(--primary-blue);">ARARE Engine <span style="font-weight: 200; font-size: 1rem; color: white;">v1.0</span></h1>
+        <div class="status-badge">
+            <div class="dot"></div> SYSTEM_OPTIMIZED
+        </div>
+    </header>
+
+    <div class="stats-grid">
+        <div class="card">
+            <h3>Active Constraints</h3>
+            <p>142</p>
+        </div>
+        <div class="card">
+            <h3>Optimization Score</h3>
+            <p>98.4%</p>
+        </div>
+        <div class="card">
+            <h3>Resources Tracked</h3>
+            <p>24/24</p>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <div class="panel-header">
+            <h2 style="margin:0">Live Allocation Logs</h2>
+            <button class="btn-trigger" onclick="alert('Re-optimization Engine Started...')">Re-Optimize Now</button>
+        </div>
+
+        <div class="log-entry">
+            <span class="timestamp">[22:15:01]</span> Fetching faculty availability constraints from database...
+        </div>
+        <div class="log-entry">
+            <span class="timestamp">[22:15:04]</span> Initial population generated using Heuristic Search.
+        </div>
+        <div class="log-entry error">
+            <span class="timestamp">[22:15:08]</span> Conflict Detected: Room 302 over-capacity for "Data Structures" lecture.
+        </div>
+        <div class="log-entry">
+            <span class="timestamp">[22:15:10]</span> ARARE Re-optimization complete. Conflict resolved via Room Swap.
+        </div>
+    </div>
+
+</body>
+</html>
